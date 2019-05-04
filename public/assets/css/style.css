@@ -1,8 +1,8 @@
-.fa-trash {
+.fa-minus-circle {
   color: red;    
 }
 
-.fa-trash:last-of-type:hover {
+.fa-minus-cirlce:last-of-type:hover {
   cursor: pointer;
 }
 

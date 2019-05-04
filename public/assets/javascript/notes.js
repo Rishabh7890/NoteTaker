@@ -18,7 +18,7 @@ function showNotes() {
           $("<h5>").text("Title: " + data[i].title),
           $("<h6>").text(data[i].body),
           $("<hr>"),
-          $("<i class='delete-note fas fa-trash'>")
+          $("<i class='delete-note fas fa-minus-circle'>")
         );
 
         listNote.attr("note-data", data[i].id)

@@ -13,11 +13,13 @@ function showNotes() {
 
       var listNote =  $("<li class='list-group-item'>");
 
+      // append listNote to the list
       listNote.append(
-        $("<h4>").text("Note Number: " + (i + 1)),
+        $("<h5>").text("Note Number: " + (i + 1)),
               $("<hr>"),
-              $("<h4>").text("Title: " + data[i].title),
-              $("<h5>").text(data[i].body),
+              $("<h5>").text("Title: " + data[i].title),
+              $("<h6>").text(data[i].body),
+              $("<hr>"),
               $("<i class='delete-note fas fa-trash'>")
       );
 
@@ -72,6 +74,7 @@ $(document).on("click", ".delete-note", function(event) {
   })
 })
 
+// run showNotes at end
 showNotes();
 
 

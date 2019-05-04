@@ -1,0 +1,23 @@
+.fa-trash {
+  color: red;    
+}
+
+.fa-trash:last-of-type:hover {
+  cursor: pointer;
+}
+
+.jumboText{
+  font-family: 'Caveat', cursive;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: rgb(202, 195, 195);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: .5rem;
+  padding: 30px 0;
+  text-align: center;
+}

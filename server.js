@@ -1,5 +1,4 @@
 // import all node mods required 
-// const mysql = require("mysql");
 const express = require("express");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");

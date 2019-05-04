@@ -7,10 +7,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 <link rel="stylesheet" href="style.css">
-<title>notes</title>
+<title>Notes</title>
 </head>
 <body>
-<h1>notes.html works</h1>
+    <div class="container">
+        <div class="jumbotron jumbotron--home">
+          <h1 class="display-4">Your Notes</h1>
+          <p class="lead mt-4"><span id="num-newNotes">0</span> notes</p>
+          <a class="btn btn-lg mt-4 btn-primary" href="/" role="button">Create New Note</a>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold">
+                  Notes
+                </h5>
+                <ul id="newNotes-list" class="list-group mt-4">
+    
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>

@@ -23,4 +23,16 @@ router.post("/api/notes", function(req, res) {
   });
 });
 
+// route for deleting a note by id 
+router.delete("/api/notes/:id", function(req, res) {
+  connection.query("DELETE FROM notes WHERE id = ?", [req.params.id], function(err, result) {
+    if(err) {
+      return res.json(err);
+    }
+    else {
+      res.json(result);
+    }
+  });
+});
+
 module.exports = router;

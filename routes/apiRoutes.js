@@ -11,4 +11,16 @@ router.get("/api/notes", function(req, res) {
   });
 });
 
+// post a new note to database using data passed on req.body 
+router.post("/api/notes", function(req, res) {
+  connection.query("INSERT INTO notes SET ?", [req.body], function(err, result) {
+    if(err) {
+      return res.json(err);
+    }
+    else {
+      res.json(result);
+    }
+  });
+});
+
 module.exports = router;

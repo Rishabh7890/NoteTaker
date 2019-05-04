@@ -14,3 +14,6 @@ This application is a basic note taking application built with Node, Express and
 - Node
 - Express
 - MySQL
+
+## Credits 
+- Rishabh Goel

@@ -1,3 +1,4 @@
+// create function to show the notes in db 
 function showNotes() {
   $.ajax({
     url: "api/notes",
@@ -28,6 +29,7 @@ function showNotes() {
   })
 }
 
+// create an on click listner for submit button and add note to db and html 
 $("#submit").on("click", function(event) {
   event.preventDefault();
 
@@ -52,6 +54,22 @@ $("#submit").on("click", function(event) {
 
   $("#notes-list").empty();
   showNotes();
+})
+
+// create delete button to remove note 
+$(document).on("click", ".delete-note", function(event) {
+
+  var $noteID = $(this).parent().attr("note-data");
+  var $noteIDInt = parseInt($noteID);
+
+  $.ajax({
+    url: "/api/notes/" + $noteIDInt,
+    method: "DELETE"
+  })
+  .then(function() {
+    $("#notes-list").empty();
+    showNotes();
+  })
 })
 
 showNotes();

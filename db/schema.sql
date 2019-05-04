@@ -1,5 +1,6 @@
--- use jawsDB 
-USE u93evlx9bhysgnq6;
+DROP DATABASE IF EXISTS notes_db;
+CREATE DATABASE notes_db;
+USE notes_db;
 
 CREATE TABLE notes
 (

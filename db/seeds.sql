@@ -1,5 +1,3 @@
-use u93evlx9bhysgnq6;
-
 INSERT INTO notes
   (title, body)
 VALUES

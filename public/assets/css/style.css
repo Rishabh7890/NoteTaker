@@ -11,6 +11,10 @@
   color: rgb(248, 223, 161);
 }
 
+.jumboShadow {
+  box-shadow: 0 0 20px black;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background: rgb(248, 223, 161);
